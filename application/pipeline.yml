@@ -59,7 +59,7 @@ jobs:
       params: {pre: rc}
     - get: pipelines
   - task: build
-    file: pipelines/cf/tasks/blue-green-deploy.yml
+    file: pipelines/((language))/tasks/build.yml
     params:
       APP_NAME: ((app-name))
       INITIALS: ((initials))
